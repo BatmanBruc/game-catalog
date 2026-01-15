@@ -1,0 +1,102 @@
+[
+  {
+      "id": 25097,
+      "title": "The Legend of Zelda: Ocarina of Time",
+      "genre": "Action",
+      "release_year": 1998,
+      "developer": "Nintendo",
+      "platform": "Nintendo Switch",
+      "rating": 4.38,
+      "isFullData": false
+  },
+  {
+      "id": 407559,
+      "title": "Soulcalibur (1998)",
+      "genre": "Fighting",
+      "release_year": 1998,
+      "developer": "Unknown",
+      "platform": "Dreamcast",
+      "rating": 0,
+      "isFullData": false
+  },
+  {
+      "id": 54751,
+      "title": "Soulcalibur",
+      "genre": "Action",
+      "release_year": 1998,
+      "developer": "BANDAI NAMCO Entertainment America",
+      "platform": "Xbox One",
+      "rating": 4.38,
+      "isFullData": false
+  },
+  {
+      "id": 56123,
+      "title": "Metroid Prime",
+      "genre": "Action",
+      "release_year": 2002,
+      "developer": "Retro Studios",
+      "platform": "Wii",
+      "rating": 4.35,
+      "isFullData": false
+  },
+  {
+      "id": 27024,
+      "title": "Super Mario Galaxy",
+      "genre": "Platformer",
+      "release_year": 2007,
+      "developer": "Nintendo",
+      "platform": "Nintendo Switch",
+      "rating": 4.35,
+      "isFullData": false
+  },
+  {
+      "id": 27036,
+      "title": "Super Mario Galaxy 2",
+      "genre": "Platformer",
+      "release_year": 2010,
+      "developer": "Nintendo",
+      "platform": "Nintendo Switch",
+      "rating": 4.34,
+      "isFullData": false
+  },
+  {
+      "id": 28495,
+      "title": "Perfect Dark",
+      "genre": "Action",
+      "release_year": 2000,
+      "developer": "Rare",
+      "platform": "Xbox 360",
+      "rating": 3.98,
+      "isFullData": false
+  },
+  {
+      "id": 28026,
+      "title": "Super Mario Odyssey",
+      "genre": "Arcade",
+      "release_year": 2017,
+      "developer": "Nintendo",
+      "platform": "Nintendo Switch",
+      "rating": 4.42,
+      "isFullData": false
+  },
+  {
+      "id": 22511,
+      "title": "The Legend of Zelda: Breath of the Wild",
+      "genre": "Action",
+      "release_year": 2017,
+      "developer": "Nintendo",
+      "platform": "Nintendo Switch",
+      "rating": 4.47,
+      "isFullData": false
+  },
+  {
+      "id": 324997,
+      "title": "Baldur's Gate III",
+      "genre": "Adventure",
+      "release_year": 2023,
+      "developer": "Larian Studios",
+      "platform": "macOS",
+      "rating": 4.44,
+      "isFullData": false
+  }
+]
