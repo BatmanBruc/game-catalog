@@ -52,6 +52,16 @@ defineProps<{
   text-decoration: none;
   color: inherit;
   height: 100%;
+  transition: all 0.3s ease;
+}
+
+.game-card__link-wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.game-card__link-wrapper:hover .game-card {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
 }
 
 .game-card {
@@ -60,6 +70,8 @@ defineProps<{
   height: 100%;
   padding: 20px;
   position: relative;
+  transition: all 0.3s ease;
+  transform: translateZ(0); /* Enable hardware acceleration */
 }
 
 .game-card__content {
@@ -95,6 +107,12 @@ defineProps<{
   margin-left: 8px;
   border: 1px solid #93c5fd;
   white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.game-card__link-wrapper:hover .game-card__badge {
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.3);
 }
 
 .game-card__footer {
@@ -108,16 +126,23 @@ defineProps<{
   position: absolute;
   bottom: 24px;
   right: 24px;
+  transition: all 0.3s ease;
+}
+
+.game-card__link-wrapper:hover .game-card__link {
+  right: 20px;
 }
 
 .game-card__link::after {
   content: "→";
   margin-left: 4px;
-  transition: transform 0.2s ease;
+  transition: all 0.3s ease;
+  display: inline-block;
 }
 
-.game-card__link:hover::after {
-  transform: translateX(2px);
+.game-card__link-wrapper:hover .game-card__link::after {
+  transform: translateX(4px) scale(1.2);
+  color: #3b82f6;
 }
 
 .game-card__title {
@@ -125,5 +150,11 @@ defineProps<{
   font-size: 18px;
   font-weight: 600;
   color: #1f2937;
+  transition: all 0.3s ease;
+}
+
+.game-card__link-wrapper:hover .game-card__title {
+  color: #3b82f6;
+  transform: translateX(2px);
 }
 </style>
