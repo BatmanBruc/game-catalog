@@ -60,7 +60,7 @@ const performSearch = () => {
   } else {
     delete currentQuery.search
   }
-  router.replace({
+  router.push({
     path: '/',
     query: currentQuery
   })
