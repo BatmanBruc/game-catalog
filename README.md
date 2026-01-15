@@ -208,8 +208,6 @@ color: var(--color-blue-500);
 }
 ```
 
-#### 🎨 Composition API с `<script setup>`
-
 ## 🛠️ Технологии
 
 - **Nuxt 4** + **Vue 3** + **TypeScript**
