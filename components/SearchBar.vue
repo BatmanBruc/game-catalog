@@ -40,10 +40,6 @@ watch(() => gamesStore.filters.search, (newSearch) => {
 watch(() => route.query.search, (newSearch) => {
   if (newSearch !== gamesStore.filters.search) {
     searchQuery.value = (newSearch as string) || ''
-    gamesStore.setFilters({
-      ...gamesStore.filters,
-      search: (newSearch as string) || ''
-    })
   }
 }, { immediate: true })
 

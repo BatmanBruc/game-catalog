@@ -62,6 +62,10 @@ const { error, pending: loading } = await useAsyncData('games', async () => {
   lazy: true
 })
 
+watch(() => route.query, (newSearch) => {
+  gamesStore.updateFiltersFromUrl(route.query as Record<string, string>)
+}, { immediate: true })
+
 const games = computed(() => gamesStore.filteredGames)
 const totalGames = computed(() => gamesStore.games.length)
 
