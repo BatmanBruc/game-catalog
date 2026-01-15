@@ -39,8 +39,6 @@
 </template>
 
 <script setup lang="ts">
-import type { Game } from '~/types/game'
-
 defineProps<{
   game: Game
 }>()

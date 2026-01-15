@@ -20,10 +20,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import { useRouter, useRoute } from 'vue-router'
-import { useGamesStore } from '~/composables/games'
-
 interface Props {
   initialValue?: string
 }

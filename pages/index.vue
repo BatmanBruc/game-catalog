@@ -48,10 +48,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, watch } from 'vue'
-import { useGamesStore } from '~/composables/games'
-import { UI_ERROR_MESSAGES } from '~/lib/errorMessages'
-
 const route = useRoute()
 const router = useRouter()
 const gamesStore = useGamesStore()

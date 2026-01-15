@@ -74,11 +74,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
-import { useRouter } from 'vue-router'
-import { useGamesStore } from '~/composables/games'
-import type { GameFilters } from '~/types/game'
-
 const gamesStore = useGamesStore() as any
 const router = useRouter()
 
