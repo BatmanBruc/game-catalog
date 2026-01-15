@@ -52,25 +52,15 @@ const route = useRoute()
 const router = useRouter()
 const gamesStore = useGamesStore()
 
-const error = ref()
-const loading = ref(false)
 if (Object.keys(route.query).length > 0) {
   gamesStore.updateFiltersFromUrl(route.query as Record<string, string>)
 }
 
-if (import.meta.server) {
-  const result = await useAsyncData('games', async () => {
-    return await gamesStore.fetchGames()
-  })
-  error.value = result.error.value
-} else {
-  loading.value = true
-  useAsyncData('games', async () => {
-    return await gamesStore.fetchGames()
-  }).finally(() => {
-    loading.value = false
-  })
-}
+const { error, pending: loading } = await useAsyncData('games', async () => {
+  return await gamesStore.fetchGames()
+}, {
+  lazy: true
+})
 
 const games = computed(() => gamesStore.filteredGames)
 const totalGames = computed(() => gamesStore.games.length)
