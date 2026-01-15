@@ -54,10 +54,10 @@ npm run dev
 ├── components/          # Vue компоненты
 │   ├── Base/            # Базовые переиспользуемые компоненты
 │   │   ├── Alert.vue    # Компонент уведомлений
-│   │   ├── Button.vue   # Кнопка с вариантами стилей
-│   │   ├── Input.vue    # Input с иконкой поиска
-│   │   ├── Select.vue   # Select с валидацией
-│   │   └── SkeletonLoader.vue # Прелоадер с анимацией
+│   │   ├── Button.vue   # Кнопка
+│   │   ├── Input.vue    # Поле ввода
+│   │   ├── Select.vue   # Варианты выбора
+│   │   └── SkeletonLoader.vue # Прелоадер
 │   ├── GameCard.vue     # Карточка игры
 │   ├── GameFilters.vue  # Фильтры с URL-синхронизацией
 │   ├── SearchBar.vue    # Компонент поиска
@@ -216,3 +216,4 @@ color: var(--color-blue-500);
 - **RAWG API**
 - **ESLint/Prettier**
 - **Модульная архитектура**
+
